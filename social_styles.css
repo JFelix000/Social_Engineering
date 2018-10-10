@@ -126,12 +126,12 @@ article>h1 {
     margin-left: 20px;
 }
 
-article>img{
-    vertical-align: right;
-    padding: 0px 10px 10px 10px;
-    height: 500px;
-    width: 600px;
-    align: right;
+article>img {
+    height: 280px;
+    width: 400px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 article>p>a {
@@ -139,6 +139,9 @@ article>p>a {
     color: rgb(196, 110, 52);
 }
 
+article > p {
+    text-justify: left;
+}
 article>p>a:hover{
     color:rgba(196, 110, 52, 0.534);
 }
