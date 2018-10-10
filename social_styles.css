@@ -114,7 +114,6 @@ section.main {
 
 section.main p {
     text-align: left;
-
 }
 
 section.main li {
@@ -128,6 +127,11 @@ section.main img {
     height: 500px;
 }
 
+section.main>img {
+    float: right;
+    width: 250px;
+    height: 200px;
+}
 /* Side Navigation 2 Styles */
 
 
@@ -155,11 +159,7 @@ article>p>a:hover {
 }
 
 /* Aside Styles */
-section.main>p>img {
-    float: right;
-    width: 300px;
-    height: 300px;
-}
+
 
 /* Footer Styles */
 footer {
