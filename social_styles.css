@@ -3,13 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Structional Styles */
-/* All styles within this sectin will affect the structure and major elements of the HTML. Styles within will be inherited unless otherwise specified below in another section iubewfiuhfweui*/
+/* All styles within this sectin will affect the structure and major elements of the HTML. Styles within will be inherited unless otherwise specified below in another section*/
+/* The selector below states that properties within  this section will affect all elements of the HTML document.  In this case, the background color of the entire document will be the color specified in the property.*/
 
 html {
     background-color: #231F20;
 
 }
-
+/* The below selector stated that The background color of the body element will be white */
 body {
     
     background-color: white;
@@ -42,7 +43,7 @@ header>img {
 }
 
 /* Navigation Styles */
-
+/* All styles within this section will be applied to the nav elements in the HTML document*/
 nav {
     background-color: rgba(196, 110, 52, 0.534);
     text-align: right;
@@ -79,7 +80,7 @@ nav :link {
 }
 
 /* Sidebar Navigation Styles */
-
+/* Styles within this section are written to create the sidenavigation bar located on the types.html page. These styles will not affect any other section of the website or elements on the page. */
 section.sidenav {
     height: 100%;
     margin-left: 175px;
@@ -87,12 +88,11 @@ section.sidenav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 204, 255);
+    background-color: rgba(37, 194, 233, 0.938);
     padding-top: 20px;
     text-align: left;
-    padding-right: 80px;
-    padding-inline-start: 10px;
-    line-height: 4em;
+    padding-right: 75px;
+    line-height: 3em;
 }
 
 section.main h1,
@@ -103,23 +103,25 @@ h3 {
 
 section.sidenav a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     display: table;
-    width: 100%;
-    margin-left: 0px;
+    width: 215.5px;
+    padding: 10px 5px 10px 25px;
 }
 
 section.sidenav a:hover {
     background-color: white;
-    background-position: 160px;
     color: black;
 }
 
 section.sidenav ul {
     list-style: none;
+    display: block;
+    padding-inline-start: 0px;
 }
 
+/* Types.HTML Body and Text Styles */
 section.main {
     margin-left: 240px;
     font-size: 20px;
@@ -135,40 +137,31 @@ section.main li {
     padding-left: 30px;
 }
 
-section.main img {
-    width: 600px;
-    height: 500px;
-}
-
 section.main>img {
     float: right;
     width: 250px;
-    height: 200px;
+    height: 250px;
+    padding-right: 10px
 }
 
-/* Side Navigation 2 Styles */
-
-
 /* Article styles */
-
+/* All styles within this section will be applied to article elements within the the HTML document.*/
 article>h1 {
     margin-left: 20px;
 }
 /* These are all just to affect the index images at the bottom of the page, since they are article>img they do not affect the main dog picture in the home page. */
+article p {
+    text-align: left;
+    padding-right: 30px;
+}
+article>h1{
+    margin-left: 30px;
+}
 article>img {
     height: 265px;
     width: 470px;
     float: right;
-    /* margin-left: 40px;
-    margin-right: 40px; */
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 10px;
-}
-
-article p {
-    text-align: left;
-    padding-right: 20vh;
+    margin: 10px 40px 10px 40px;
 }
 
 article>p>a {
@@ -181,28 +174,16 @@ article>p>a:hover {
 }
 /* This was to change  */
 article>ul li a:link, article>ul li a:active, article>ul li a:visited {
-    color: black;
+    color: rgba(255, 139, 62, 0.89);
     text-decoration: none;
 } 
 
 article>ul li a:hover {
-    color: rgba(196, 110, 52, 0.534);
-}
-/* article>dt dd{
-    padding-right: 50px;
-} */
-/* Aside Styles */
-
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    background-color: #231F20;
-    color: white;
-    font-size: 15px;
+    color: rgba(255, 139, 62, 0.534);
 }
 
 /* Description List Styles */
+/* All styles within this section will affect description list elements (dl, dt, and dd elements) within the HTML document. */
 dl {
     padding-left: 20px;
     font-weight: bold;
@@ -210,7 +191,16 @@ dl {
     text-decoration: none;
 
 }
+dl>img{
+    width: 350px;
+    height:200px;
+    float: right;
+    padding: 0px 10px;
+}
 
+dt{
+    padding-bottom: 10px;
+}
 dd {
     font-weight: normal;
     text-decoration: none;
@@ -218,10 +208,20 @@ dd {
 }
 
 /* Blockquote styles */
-
+/* Styles wihtin this section will be applied to blockquote elements within the HTML document.*/
 blockquote {
     padding: 10px 10px;
-    width: 900px;
     background-color: bisque;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 5px 5px 5px;
+}
+
+/* Footer Styles */
+/* All styles within this section will affect footer elements within the HTML document. */
+footer {
+    text-align: center;
+    background-color: #231F20;
+    color: white;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px
 }
