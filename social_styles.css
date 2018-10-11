@@ -12,14 +12,12 @@ html {
 }
 /* The below selector stated that The background color of the body element will be white */
 body {
-    
+
     background-color: white;
     margin-left: 175px;
     margin-right: 175px;
     font-family: 'Roboto', sans-serif;
     color: rgba(82, 82, 82, 100)
-
-
 }
 
 p {
@@ -149,6 +147,7 @@ section.main>img {
 article>h1 {
     margin-left: 20px;
 }
+
 /* These are all just to affect the index images at the bottom of the page, since they are article>img they do not affect the main dog picture in the home page. */
 article p {
     text-align: left;
@@ -172,11 +171,14 @@ article>p>a {
 article>p>a:hover {
     color: rgba(196, 110, 52, 0.534);
 }
+
 /* This was to change  */
-article>ul li a:link, article>ul li a:active, article>ul li a:visited {
+article>ul li a:active,
+article>ul li a:link,
+article>ul li a:visited {
     color: rgba(255, 139, 62, 0.89);
     text-decoration: none;
-} 
+}
 
 article>ul li a:hover {
     color: rgba(255, 139, 62, 0.534);
