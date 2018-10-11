@@ -1,46 +1,55 @@
 @charset "UTF-8";
+/* 
+    Project 04: Version Control
+    Essentials of Computing Webpage
 
+    Social Engineering Style Sheet
+    Authors: Gabriel Hernandez, Maria De Jesus Rizo, Jose Felix
+    Date: 9.28.18
+
+    Filename: social_styles.css
+*/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Structional Styles */
-/* All styles within this sectin will affect the structure and major elements of the HTML. Styles within will be inherited unless otherwise specified below in another section iubewfiuhfweui*/
+/* All styles within this sectin will affect the structure and major elements of the HTML. Styles within will be inherited unless otherwise specified below in another section*/
+/* The selector below states that properties within  this section will affect all elements of the HTML document.  In this case, the background color of the entire document will be the color specified in the property.*/
 
 html {
     background-color: #231F20;
 
 }
 
+/* The below selector states that The background color of the body element will be white, overwriting what was previously set as the background color in the slector above due to its specificity. The margin left and right properties create a margin of 175 pixels on both sides of the body element. The font family property specifies what font the text within the body element will be. The color property states what the color of the text in the body will be. */
 body {
 
     background-color: white;
     margin-left: 175px;
     margin-right: 175px;
     font-family: 'Roboto', sans-serif;
-    color: rgba(82, 82, 82, 100)
+    color: rgb(82, 82, 82,)
 }
 
+/* The selector below states that properties listed will affect the p elements within the HTML document. The padding property creates a padding of 10px around all sides of the p element. The font size property defines the size of the text within the p element, in this case 20px.  */
 p {
     padding: 10px 30px 5px 30px;
     font-size: 20px;
 }
 
-section.main p {
-    padding-right: 50px;
-}
-
+/* The selector below states that properties within will be applied to h1 elements within the html document. The padding left property created a padding of 20px to only the left of the h1 elements. */
 h2 {
     padding-left: 20px
 }
 
+/* This selector states that properties within will be applied to the img element nested within a header element which can be found on the index.html page. The width property states that the image will stretch to fill the entire body element. The height property states that the image will always be at a height of 700px no matter the body size. */
 header>img {
     width: 100%;
     height: 700px;
-    display: block;
-
 }
 
 /* Navigation Styles */
-
+/* All styles within this section will be applied to the nav elements in the HTML document*/
+/* The selector below states that properties within will affect the nav elements within the HTML document. Similar to the body element, the background color stated above is overwritten by the new background color stated here. The text align property aligns text in the nav to the right of the page. The font size property defines the size of the font in the navigation. */
 nav {
     background-color: rgba(196, 110, 52, 0.534);
     text-align: right;
@@ -49,10 +58,12 @@ nav {
     padding-bottom: 10px;
 }
 
+/* The selector below states that the property within will be applied to a elements within the nav elements. The margin:none; property removes any margin from the element that may have been given by the user agent styles in the browser.*/
 nav a {
     margin: none;
 }
 
+/* The selector below states that properties listed will be applied to ul elements within nav elements. The list style property defines what bullet points the list will use, in this case being none. The display infine property states that the ul elements should be placed side by side rather than stacked on top of one another.  */
 nav ul {
     list-style: none;
     display: inline;
@@ -60,24 +71,29 @@ nav ul {
 
 }
 
+/* Properties listed below in the selector will be applied to li elements within the nav element. */
 nav li {
     display: inline;
     padding: 10px 30px;
 }
 
-nav ul li:hover {
+/* The selector below states that properties written will be applied to the li element within the ul element within the nav element. The :hover and :active psuedo classes define the states the links are in which te properties will be applied. The opacity property defines how opaque the text will appear in these states. */
+nav ul li:hover,
+nav ul li:active {
     opacity: .3;
     background-color: rgba(184, 82, 64, 0.534);
 }
 
+/* The comment above applies to this selector as well, the only difference being the state of the links being styles.  */
 nav a:visited,
-nav :link {
+nav a:link {
     text-decoration: none;
     color: black;
 }
 
 /* Sidebar Navigation Styles */
-
+/* Styles within this section are written to create the sidenavigation bar located on the types.html page. These styles will not affect any other section of the website or elements on the page. */
+/* The selector below states that properties within will be applied to the section element with the class of sidenav. The width property defines how big the side navigation will appear on the page. The height property causes the side navigation to appear at the top of the page and go down all the way to the bottom. The top and left elements state that the side navigation will be from the top and left of the page. The line height property states how high each line of text is from another. */
 section.sidenav {
     height: 100%;
     margin-left: 175px;
@@ -85,127 +101,118 @@ section.sidenav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 204, 255);
+    background-color: rgb(37, 194, 233);
     padding-top: 20px;
     text-align: left;
-    padding-right: 80px;
-    padding-inline-start: 10px;
-    line-height: 4em;
+    padding-right: 75px;
+    line-height: 3em;
 }
 
-section.main h1,
-h2,
-h3 {
-    padding-left: 30px;
-}
-
+/* Properties listed below will be applied to the a elements within the section with the class of sidenav. The display property defines the bahavior of the text boxes displayed. */
 section.sidenav a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     display: table;
-    width: 100%;
-    margin-left: 0px;
+    width: 215.5px;
+    padding: 10px 5px 10px 25px;
 }
 
+/* Properties listed below will be applied to the a element within the section with the class of sidenav. The difference here is that the styles are being applies when the user is hovered over the element as stated by the :hover psuedo class. */
 section.sidenav a:hover {
     background-color: white;
-    background-position: 160px;
     color: black;
 }
 
+/* Propeties within the selector below will be applied to the ul element within the section element with the class of sidenav. The padding-inline-start defines the inline start of the padding of an element. The property is icluded here to overwrite the user agent property provided by the browser. */
 section.sidenav ul {
     list-style: none;
+    display: block;
+    padding-inline-start: 0px;
 }
 
+/* Types.HTML Body and Text Styles */
+/* Styles within this section will affect the way in which the body and text of the types.html page will be displayed on the browser. */
+/* the selector below states that elements within the section.main element will by styled with the properties listed. */
 section.main {
     margin-left: 240px;
     font-size: 20px;
 }
 
-section.main p {
-    text-align: left;
+/* The selector below states that properties listed will be applied to both h1 and h2 elements within the section element with a class of main. */
+section.main h1,
+h2 {
+    padding-left: 30px;
 }
 
+/* The selector below states that the properties within will be applied to the p elements within the section element with a class of main. */
+section.main p {
+    text-align: left;
+    padding-right: 50px;
+}
+
+/* The selector below states that the properties within will be applied to the li elements within the section element with a class of main. */
 section.main li {
     font-weight: bold;
     list-style: none;
     padding-left: 30px;
 }
 
-section.main img {
-    width: 600px;
-    height: 500px;
-}
-
+/* Styles within this selector will be applied to the img element nested within the section element with a class of main. The float element floats a particular box, in this case the image, into the position specified. This causes the image to be to the right of the text. */
 section.main>img {
     float: right;
     width: 250px;
-    height: 200px;
+    height: 250px;
+    padding-right: 10px
 }
 
-/* Side Navigation 2 Styles */
-
-
 /* Article styles */
-
+/* All styles within this section will be applied to article elements within the the HTML document.*/
 article>h1 {
     margin-left: 20px;
 }
 
 /* These are all just to affect the index images at the bottom of the page, since they are article>img they do not affect the main dog picture in the home page. */
+article p {
+    text-align: left;
+    padding-right: 30px;
+}
+
+/* Properties within this selector will be applied to h1 elements nested within article elements. */
+article>h1 {
+    margin-left: 30px;
+}
+
+/* Properties within this selector will affect img elements nested within article elements. */
 article>img {
     height: 265px;
     width: 470px;
     float: right;
-    /* margin-left: 40px;
-    margin-right: 40px; */
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 10px;
+    margin: 10px 40px 10px 40px;
 }
 
-article p {
-    text-align: left;
-    padding-right: 20vh;
-}
-
+/* The selector below states that properties within will be applied to the a element nested within the p element nested within the article element */
 article>p>a {
     text-decoration: none;
     color: rgb(196, 110, 52);
 }
 
+/* The selector below states that properties within will be applied to the a element nested within the li element nested within the ul element nested within the article element. The :active and :hover psuedo classes define the states the links are in which te properties will be applied.*/
+article>ul>li>a:active,
 article>p>a:hover {
     color: rgba(196, 110, 52, 0.534);
 }
 
-/* This was to change  */
-article>ul li a:link,
-article>ul li a:active,
-article>ul li a:visited {
-    color: black;
+/* The comment above applies to this selector as well with the only difference being that states that are styled. */
+article>ul>li>a:link,
+article>ul>li>a:visited {
+    color: rgba(255, 139, 62, 0.89);
     text-decoration: none;
 }
 
-article>ul li a:hover {
-    color: rgba(196, 110, 52, 0.534);
-}
-
-/* article>dt dd{
-    padding-right: 50px;
-} */
-/* Aside Styles */
-
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    background-color: #231F20;
-    color: white;
-    font-size: 15px;
-}
-
 /* Description List Styles */
+/* All styles within this section will affect description list elements (dl, dt, and dd elements) within the HTML document. */
+/* Properties whithin this selector will affect dl elements within the html document. The font weight property changes the weight of the font and in this case makes the font of the element bold.   */
 dl {
     padding-left: 20px;
     font-weight: bold;
@@ -214,6 +221,20 @@ dl {
 
 }
 
+/* The selector below states that properties listed within will affect images nested within the dl element.  */
+dl>img {
+    width: 350px;
+    height: 200px;
+    float: right;
+    padding: 0px 10px;
+}
+
+/* The selector below states that properties within will affect dt elements within the html document. */
+dt {
+    padding-bottom: 10px;
+}
+
+/* The selector below states that properties within will affect dd elements within the html document. */
 dd {
     font-weight: normal;
     text-decoration: none;
@@ -221,14 +242,22 @@ dd {
 }
 
 /* Blockquote styles */
-
+/* Styles wihtin this section will be applied to blockquote elements within the HTML document.*/
+/* The selector below states that properties within will affect blockquote elements within the html document. The box shadow property attaches shadows to the side of the text box on the page. */
 blockquote {
     padding: 10px 10px;
-    width: 900px;
     background-color: bisque;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 5px 5px 5px;
 }
 
+/* Footer Styles */
+/* All styles within this section will affect footer elements within the HTML document. */
+/* Properties listed within the selector will be applied to footer elements in the HTML documents. The text align center property aligns text within the footer in the center of the footer element. */
 footer {
-    padding: 15px 5px 10px 5px;
+    text-align: center;
+    background-color: #231F20;
+    color: white;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px
 }
