@@ -1,21 +1,33 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 /* Structional Styles */
-/* All styles within this sectin will affect the structure and major elements of the HTML. Styles within will be inherited unless otherwise specified below in another section */
+/* All styles within this sectin will affect the structure and major elements of the HTML. Styles within will be inherited unless otherwise specified below in another section iubewfiuhfweui*/
 
 html {
     background-color: #231F20;
+
 }
 
 body {
+    
     background-color: white;
-    font-family: 'Playfair Display', serif;
+    margin-left: 175px;
+    margin-right: 175px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(82, 82, 82, 100)
 
 
 }
 
 p {
-    padding-left: 30px;
+    padding: 10px 30px 5px 30px;
     font-size: 20px;
+}
+
+section.main p {
+    padding-right: 50px;
 }
 
 h2 {
@@ -70,14 +82,15 @@ nav :link {
 
 section.sidenav {
     height: 100%;
+    margin-left: 175px;
     width: 170px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #231F20;
+    background-color: rgba(0, 204, 255);
     padding-top: 20px;
     text-align: left;
-    padding-right: 20px;
+    padding-right: 80px;
     padding-inline-start: 10px;
     line-height: 4em;
 }
@@ -108,13 +121,12 @@ section.sidenav ul {
 }
 
 section.main {
-    margin-left: 190px;
+    margin-left: 240px;
     font-size: 20px;
 }
 
 section.main p {
     text-align: left;
-
 }
 
 section.main li {
@@ -128,6 +140,12 @@ section.main img {
     height: 500px;
 }
 
+section.main>img {
+    float: right;
+    width: 250px;
+    height: 200px;
+}
+
 /* Side Navigation 2 Styles */
 
 
@@ -136,13 +154,21 @@ section.main img {
 article>h1 {
     margin-left: 20px;
 }
-
+/* These are all just to affect the index images at the bottom of the page, since they are article>img they do not affect the main dog picture in the home page. */
 article>img {
-    height: 280px;
-    width: 400px;
+    height: 265px;
+    width: 470px;
     float: right;
-    margin-left: 10px;
-    margin-right: 20px;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+article p {
+    text-align: left;
+    padding-right: 20vh;
 }
 
 article>p>a {
@@ -153,13 +179,20 @@ article>p>a {
 article>p>a:hover {
     color: rgba(196, 110, 52, 0.534);
 }
+/* This was to change  */
+article>ul li a:link, article>ul li a:active, article>ul li a:visited {
+    color: black;
+    text-decoration: none;
+} 
 
-/* Aside Styles */
-section.main>p>img {
-    float: right;
-    width: 300px;
-    height: 300px;
+article>ul li a:hover {
+    color: rgba(196, 110, 52, 0.534);
 }
+/* article>dt dd{
+    padding-right: 50px;
+} */
+/* Aside Styles */
+
 
 /* Footer Styles */
 footer {
@@ -174,17 +207,21 @@ dl {
     padding-left: 20px;
     font-weight: bold;
     font-size: 20px;
+    text-decoration: none;
 
 }
 
 dd {
     font-weight: normal;
+    text-decoration: none;
+    padding-right: 60px;
 }
 
 /* Blockquote styles */
 
 blockquote {
     padding: 10px 10px;
+    width: 900px;
     background-color: bisque;
     box-shadow: 2px 2px 2px;
 }
