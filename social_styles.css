@@ -18,6 +18,12 @@ p {
     font-size: 20px;
 }
 
+section.main p {
+    padding-right: 50px;
+}
+article p#robber {
+    padding-right: 550px;
+}
 h2 {
     padding-left: 20px
 }
@@ -108,7 +114,7 @@ section.sidenav ul {
 }
 
 section.main {
-    margin-left: 190px;
+    margin-left: 180px;
     font-size: 20px;
 }
 
@@ -132,6 +138,7 @@ section.main>img {
     width: 250px;
     height: 200px;
 }
+
 /* Side Navigation 2 Styles */
 
 
@@ -140,13 +147,25 @@ section.main>img {
 article>h1 {
     margin-left: 20px;
 }
-
+/* These are all just to affect the index images at the bottom of the page, since they are article>img they do not affect the main dog picture in the home page. */
 article>img {
-    height: 280px;
-    width: 400px;
+    height: 265px;
+    width: 470px;
     float: right;
-    margin-left: 10px;
-    margin-right: 20px;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    margin: 0px 40px;
+}
+
+/* article img#money {
+    width: 250px;
+    height: 150px;
+    margin-right: 150px;
+} */
+
+article p {
+    text-align: left;
+    padding-right: 20vh;
 }
 
 article>p>a {
@@ -157,7 +176,18 @@ article>p>a {
 article>p>a:hover {
     color: rgba(196, 110, 52, 0.534);
 }
+/* This was to change  */
+article>ul li a:link, article>ul li a:active, article>ul li a:visited {
+    color: black;
+    text-decoration: none;
+} 
 
+article>ul li a:hover {
+    color: rgba(196, 110, 52, 0.534);
+}
+/* article>dt dd{
+    padding-right: 50px;
+} */
 /* Aside Styles */
 
 
@@ -179,12 +209,14 @@ dl {
 
 dd {
     font-weight: normal;
+    padding-right: 60px;
 }
 
 /* Blockquote styles */
 
 blockquote {
     padding: 10px 10px;
+    width: 900px;
     background-color: bisque;
     box-shadow: 2px 2px 2px;
 }
