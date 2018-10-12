@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+
+<html>
+<!-- Begining of document -->
 
 <head>
+    <!-- 
+        Project 04: Version Control
+        Essentials of Computing Webpage
+
+        Social Engineering types
+        Authors: Gabriel Hernandez, Maria De Jesus Rizo, Jose Felix
+        Date: 9.28.18
+
+        Filename: types.html
+     -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Types</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <!-- The title tag states that will be shown in the page tab when the user views the page on the browser. The link element links the stylehsheet to the page which will affect how the page looks on the browser. The link element containing the .ico image gives the browser an image to place next to the title in the browser tab.-->
+    <title>Types</title>
+    <link rel="icon" href="Images/favicon (1).ico">
+    <link rel="stylesheet" href="social_styles.css">
 </head>
+<!-- Begining of content on the webpage visible to users. -->
 
 <body>
+    <!-- Begining of the navigation content on the webpage meant to help users navigate the various pages of the site. -->
     <header>
+        <!-- The navigation is a set of links that when clicked by the user will direct them to another page of the same website. -->
         <nav>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="types">Types</a>
+                    <a href="types.html">Types</a>
                 </li>
                 <li>
                     <a href="protection.html">Protection</a>
@@ -34,52 +46,130 @@
             </ul>
         </nav>
     </header>
-    <h1>Types of Social Engineering</h1>
-    <p>Social enginnering comes in many forms, some being more time and labor intensive than others. </p>
-    <h2>Online Methods</h2>
-    <ul>
-        <li>Phishing</li>
+    <!-- Elements within this section will create a side navigation of the webpage that allows the user to decide which section of text they would like to look at. -->
+<!-- The section element seperates a group of elements from the rest of the document. The class of sidenav is added to the section element in order to allow for certain styles to be applied to elements within this section that will not style other elements on the page.  -->
+    <section class="sidenav">
+        <!-- The ul element creates an unordered list on the page. The li element defines list items within the unordered list. The anchor tags located within the li elements are used to allow the viewer to click on a particular section that they would like to see and be taken to where that particular section is on the webpage. -->
+        <ul>
+            <li>
+                <a href="#online">Online-Methods</a>
+            </li>
+            <li>
+                <a href="#online1">Phishing</a>
+            </li>
+            <li>
+                <a href="#online2">Baiting</a>
+            </li>
+            <li>
+                <a href="#online3">Pretexting</a>
+            </li>
+            <li>
+                <a href="#online4">Watering Hole</a>
+            </li>
+        </ul>
+        <!-- The comment above also applies to this section of code. -->
+        <ul>
+            <li>
+                <a href="#person">In-Person Methods</a>
+            </li>
+            <li>
+                <a href="#person1">Tailgating</a>
+            </li>
+            <li>
+                <a href="#person2">Impersonation</a>
+            </li>
+        </ul>
+    </section>
+    <!-- Begining of text content available fro users to read. -->
+    <!-- The section elements with a class of main seperates this text from what was written above allowing for it to be styles differently within the CSS. -->
+    <section class="main">
+        <!-- The h1 element makes the text within its tags larger when compared to other text, usually indicating an important title or heading. -->
+        <h1>Types of Social Engineering</h1>
+        <!-- The p element creates a paragraph within the section element with the class of main. -->
+        <p>Social engineering comes in many forms, some being more time and labor intensive than others. Different
+            methods can also be catagorized as either <strong>online methods</strong> or <strong>in-person methods</strong>.</p>
+        <hr>
+        <!-- Comments made above apply to the rest of the elements nested within the section elemnts with the class of main. The only variation between some elements is the use of either an h1, h2, or li element for certain heading. -->
+        <!-- Ids seen within wither h2 or li element are placed there as to allow for the links displayed in the side nav to bring the user to the proper section of text it correlates to when clicked.  -->
+        <h2 id="online"> Online Methods</h2>
+        <p>Most methods of social engineering involve aspects of online contacts between both the hacker and the person
+            they are trying to obtain information from. This contact can vary from method to method icluding a single
+            target email or a wide target bait site. </p>
+        <hr>
+        <img src="Images/spamemail.png">
+        <li id="online1">Phising</li>
+
         <p>Perhaps the most common example of social engineering seen today is phising. With phishing scams, the
-            individual trying to recieve information from their victum sends malicious content in the form of emails
-            with links or attachmets. Such attacks typically cause the victum to feel a sense of urgency when or fear
+            individual trying to recieve information from their victim sends malicious content in the form of emails
+            with links or attachmets. Such attacks typically cause the victim to feel a sense of urgency when or fear
             with the intent of making them act on a matter quickly. Such scams are accompished by impersonating a
-            trusted figure and asking the victum for sensitive or personal information in order to have the issue
-            resolved.
-        </p>
-        <img src="Images/email.jpg" alt="Email Scam">
+            trusted figure and asking the victim for sensitive or personal information in order to have the issue
+            resolved.</p>
         <hr>
-        <li>Baitting</li>
-        <p>Baiting is a form of social engineering in which the individual offers their victum a reward in exchange of
-            information. These sites usually come in the form of sites that say the victum is the winner of a free
+
+        <li id="online2">Baiting</li>
+        <p>Baiting is a form of social engineering in which the individual offers their victim a reward in exchange of
+            information. These sites usually come in the form of sites that say the victim is the winner of a free
             gift. The user is then required to input personal information in order to claim their reward. From this
-            hackers or identity theifs are able to gain access to private informations includign the victums address or
-            credit card information.</p>
+            hackers or identity thieves are able to gain access to private informations including the victims address
+            or
+            credit card information
+        </p>
         <hr>
-        <li>Pretexting</li>
-        <p>Another for of Social engineering is pretexting. Pretexting is when an individual fabricates a story that
-            allows
-            them to ask another individual for a </p>
+
+        <li id="online3">Pretexting</li>
+        <p>Another for of social engineering is pretexting. Pretexting is when an individual fabricates a story that
+            allows them to ask another individual for certain private and personal information. This fabrication is
+            meant to leave little uncertainty between the individual and their victim as to not arouse suspicion when
+            the individual asks for such information. The use of pretexting requires a substantial amount of knowledge
+            on the victim or company in order to make the story seem as plausible as possible.
+        </p>
+
         <hr>
-    </ul>
 
+        <li id="online4">Watering Hole</li>
+        <p>In watering hole attacks, the individual locates a website frequently visited by their targets and exploits
+            vunerabilities in the site . Once a method to bypass the sites security is found, the individual them
+            infects the site with a variety of
+            malware. Unlike phising, using a water hole allows the idividual to wait for their victims to come to them
+            rather than having to send an emails to the person. This attack recieves its name from its likeness to how
+            a predetor in the wild would wait for its prey to come to a watering hole knowing that eventually they
+            would. </p>
+        <hr>
 
-    <h2>In Person Methods</h2>
-    <ul>
-        <li>Tailgating</li>
-        <p>In tailgating, an individual phisically gains access to an area that they have no authoirzation to by
+        <h2 id="person">In Person Methods</h2>
+
+        <p>While the most commonly seen types of social engineering are seen online, in person methods exists as well.
+            These methods are performed through physical actions including following the person into a restricted area
+            or impersonating a real life figure to gain access to physical content such as files or confidential data
+            stored locally.
+        </p>
+
+        <hr>
+        <li id="person1">Tailgating</li>
+        <p>In tailgating, an individual physically gains access to an area that they have no authorization to by
             following
             behind an employee who is authorized to enter the area. The individual typically impersonates another
-            figure,whether made up or real, and creates a fabricated story as to why they are there. </p>
+            figure,whether made up or real, and creates a fabricated story as to why they are there. This type of
+            social engineering mostly occurs in a company or business setting. Similar to pretexting, the individual
+            must have a substantial knowledge on the company in order to not arouse suspicion.
+        </p>
         <hr>
-    </ul>
+        <img src="Images/ninja.png" alt="ninja">
+        <li id="person2">Impersonation</li>
+        <p>Impersonation is when the individual attempting to obtain information disguises themselves as another
+            individual. This type of social engineering, when done in person, is more often seen in a business setting
+            like tailgating. The use of impersonation can be found throughout almost all methods of social engineering
+            as the individual
+            wanting to obtain information is usually under the disguise of someone else in order to receive the
+            information they want. The person or entity that the individual may impersonate can vary greatly from
+            either an employee or a corporate higher-up.
+        </p>
+        <!-- The footer element creates a section at the very bottom of the page in which text can be placed.-->
+        <footer>Developers: Gabriel Hernandez &#8226; Maria De Jesus Rizo &#8226; Jose Felix</footer>
 
-    <footer>Developers: Gabriel Hernandez &#8226; Maria De Jesus Rizo &#8226; Jose Felix</footer>
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your
-                browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <script src="" async defer></script>
 </body>
+<!-- End of content displayed on the page for users to read. -->
 
 </html>
+<!-- End of document. -->

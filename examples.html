@@ -1,58 +1,151 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Examples</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="types.html">Types</a></li>
-                    <li><a href="protection.html">Protection</a></li>
-                    <li><a href="examples.html">Examples</a></li>
-                </ul>
-            </nav>
-        </header>
-        <article>
-            <h1>Examples</h1>
-            <ul>
-                <li>2011-RSA Attack</li>
-                <li>2013-Department of Labor Watering Hole Attack</li>
-                <li>2013-Youtube Costomer Account Compromise</li>
-                <li>2014-Sony Pictures Hack</li>
-                <li>2015-Ubiquiti Network</li>
-            </ul>
-            <dl>
-                <dt>2011-RSA Attack</dt>
-                <dd></dd>
-                <hr>
-                <dt>2013-Department of Labor Watering Hole Attacl</dt>
-                <dd></dd>
-                <hr>
-                <dt>2013-Youtube Costomer Account Compromise</dt>
-                <dd></dd>
-                <hr>
-                <dt>2014-Sony Pictures Hack</dt>
-                <dd></dd>
-                <hr>
-                <dt>2015-Ubiquiti Network</dt>
-                <dd></dd>
-            </dl>
-        </article>
-        <footer>Developers: Gabriel Hernandez &#8226; Maria De Jesus Rizo &#8226; Jose Felix</footer>
 
-        <script src="" async defer></script>
-    </body>
+
+<html class="no-js">
+<!-- Begining of document -->
+
+<head>
+    <!-- 
+        Project 04: Version Control
+        Essentials of Computing Webpage
+
+        Social Engineering Examples
+        Authors: Gabriel Hernandez, Maria De Jesus Rizo, Jose Felix
+        Date: 9.28.18
+
+        Filename: examples.html
+     -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The title tag states that will be shown in the page tab when the user views the page on the browser. The link element links the stylehsheet to the page which will affect how the page looks on the browser. The link element containing the .ico image gives the browser an image to place next to the title in the browser tab.-->
+    <title>Examples</title>
+    <link rel="icon" href="Images/favicon (1).ico">
+    <link rel="stylesheet" href="social_styles.css">
+</head>
+<!-- Begining of context visible to users on the webpage. -->
+
+<body>
+    <!-- Begining of navigation and links menat to allow users to travel from one page to another on the site -->
+    <header>
+        <!-- The navigation is a list of elements that when clicked direct the user to another page within the website. -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="types.html">Types</a>
+                </li>
+                <li>
+                    <a href="protection.html">Protection</a>
+                </li>
+                <li>
+                    <a href="examples.html">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Begining of text content diplayed on the webpage -->
+    <article>
+        <!-- The h1 element makes the text  wrapped within larger that the rest of the text on the page and is used to indicate important titles or headings. -->
+        <h1>Examples</h1>
+        <!-- The ul element creates an unordered list of items that are displayed on the webpage. The li elemet defines the list items within the unordered list. The a element wrapping the list item names is used to add a link to the item. This a and link allow to the list item name to, when clicked, link the user to a particular area of the text on the page. -->
+        <ul>
+            <li>
+                <a href="#ex1">2011-RSA Attack</a>
+            </li>
+            <li>
+                <a href="#ex2">2013-Department of Labor Watering Hole Attack</a>
+            </li>
+            <li>
+                <a href="#ex3">2013-Youtube Customer Account Compromise</a>
+            </li>
+            <li>
+                <a href="#ex4">2014-Sony Pictures Hack</a>
+            </li>
+            <li>
+                <a href="#ex5">2015-Ubiquiti Network</a>
+            </li>
+        </ul>
+        <!-- The dl element defines a description list. The dt element defines the terms in the list. The id within the dt element is used to define what href from above will attach to the text, meaning that if the user were to click '2011-RSA Attack' in the ul above they would be taken to the term with the id corresponding to what is linked. the dd element defines the description of the term. -->
+        <dl>
+            <dt id="ex1">2011-RSA SecureID Attack</dt>
+<<<<<<< Updated upstream
+            <img src="Images/RSA.png" alt="RSA Logo">
+            <dd>In 2011 four employees of a network security company, RSA, fell victim to phishing emails that led to a
+                company wide disaster. The way the attack worked was that recipients opened an email containing two
+=======
+            <dd>In 2011 four employees of a network security company, RSA, fell victim to phishing emails which led to a
+                company wide disaster. The way the attack worked was the recipients opened an email containing two
+>>>>>>> Stashed changes
+                attachments. One was to find a weak and vulnerable spot in the computer's security and the other
+                attachment "snuck into" the computer's files and from there was able to give the hackers the access
+                they were looking for. Remediation for investigating lost productivity and lost revenue costed roughly
+                $70 million</dd>
+            <br>
+            <!-- Comments made above apply to the rest of the elements within the dl element -->
+            <hr>
+            <dt id="ex2">2013-Department of Labor Watering Hole Attack</dt>
+            <dd>In 2013 the U.S. Department of Labor was hacked. When visitors opened the website they were unknowingly
+                fell victim to a watering hole attack. Watering hole attacks are a form of social engineering where a
+                website is made to look like the official one but reality they are sites with malware installers that
+                “infect” a computer with malware. In with respect to this incident it was the government's website and
+                only certain pages were “infected.” With it being the government website that was hacked they never
+                released who or how many had been infected and did not state wether sensitive information was
+                obtained. The hackers were never identified.</dd>
+            <hr>
+<<<<<<< Updated upstream
+            <dt id="ex3">2013-Yahoo! Costomer Account Compromise</dt>
+            <img src="Images/yahoo.png" alt="Yahoo Logo">
+=======
+            <dt id="ex3">2013-Yahoo! Customer Account Compromise</dt>
+>>>>>>> Stashed changes
+            <dd>Another famous case where social engineering was took place was in 2013 at Yahoo! At first, the reports
+                stated that about 500 million accounts were breached. In 2017, about four years later, the true number
+                of over three billion accounts came out. It was reported that emails, email addresses, birthdays and
+                more were compromised. No bank account information was directly compromised, but with the information
+                that was breached could have been sold on the blackmarket where the information bought could be used to
+                gain access to those accounts. Due to a single email and an employee, an internet giant and its
+                billions of customer’s data were breached; an unfortunate, yet excellent example of social engineering.
+            </dd>
+            <hr>
+            <dt id="ex4">2014-Sony Pictures Hack</dt>
+            <dd>Many large corporations have fallen victim to social engineering and its many forms. A well-known
+                example of social engineering was in 2014 when Sony Pictures was hacked. In late November 2014 Sony
+                Pictures was hacked by a group that called itself the GOP (Guardians of Peace). Some claims by
+                employees say that the hackers were phishing; using Apple ID password requests to gain access to their
+                accounts. Through phishing, the North Korean hackers were able to successfully wipe several Sony
+                computers and made threats of releasing private information. It is thought that one of the motives for
+                the attack was over the movie The Interview. In the movie, starring Seth Rogen and James Franco, the
+                two are sent to North Korea to assassinate the dictator, Kim Jong Un. The, alleged, korean hackers are
+                thought to have found the movie offensive and demanded that the movie not to be shown. Using a specific
+                type of social engineering called phishing the hackers were successful on their mission; Sony released
+                the movie online and there were a couple theatre that it was played in.</dd>
+            <hr>
+<<<<<<< Updated upstream
+
+            <dt id="ex5">2015-Ubiquiti Network</dt>
+            <img src="Images/Ubiquiti_Logo.png" alt="Ubiquiti Logo">
+            <dd>Ubiquiti is a company that manufactures hardware and software. In 2015 they found their finance
+                department targeted with a fraud scheme. The scheme mainly revolved around an employee being
+                impersonated. The company did not release the actual structure of the attack but they did say the an
+                employee received an email that was apparently from one of their Hong Kong subsidiary. They said that
+                normally when these types of emails are received they are just instructions to update information. The
+                employees, thinking they were just doing their jobs, sent over $47 million to who they thought were the
+                oversea accounts. The money actually went to the hackers and only about $8 million was recovered.
+=======
+            <dt id="ex5">2015-Ubiquiti Network Scam</dt>
+            <dd>Ubiquiti is a company that manufactures hardware and software. In 2015 they found there finance department targeted with a fraud scheme. The scheme mainly revolved around an employee being impersonated.The company did not release the actual structure of the attack but they did say the an employee received an email that was apparently from on of their Hong Kong subsidiary. They said they normally when these types of emails are received they are just instructions for an updated information. The employees, thinking they were just doing their jobs, sent over $47 million to who they thought were they oversea account. They money actually went to the hackers and only about $8 million was recovered.
+>>>>>>> Stashed changes
+            </dd>
+        </dl>
+    </article>
+    <!-- The footer element creates a section at the very bottom of the page in which text can be placed.-->
+    <footer>Developers: Gabriel Hernandez &#8226; Maria De Jesus Rizo &#8226; Jose Felix</footer>
+
+</body>
+<!-- End of content displayed on the page for users. -->
+
 </html>
+<!-- End of document -->

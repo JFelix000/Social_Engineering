@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="no-js">
-<!--<![endif]-->
+<!-- Begining of document -->
 
 <head>
+    <!-- 
+        Project 04: Version Control
+        Essentials of Computing Webpage
+
+        Social Engineering Index
+        Authors: Gabriel Hernandez, Maria De Jesus Rizo, Jose Felix
+        Date: 9.28.18
+
+        Filename: index.html
+     -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>This is our project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <!-- The title tag states that will be shown in the page tab when the user views the page on the browser. The link element links the stylehsheet to the page which will affect how the page looks on the browser. The link element containing the .ico image gives the browser an image to place next to the title in the browser tab.-->
+    <title>Home</title>
+    <link rel="icon" href="Images/favicon (1).ico">
+    <link rel="stylesheet" href="social_styles.css">
 </head>
-
+<!-- Begining of content that will be visible on the webpage for users. -->
+<!-- Made change -->
 <body>
+    <!-- Begining of navigation content and links that will be displayed on the webpage to help users navigate through the site. -->
     <header>
+        <!-- The navigation is a list if links that when clicked by the user will take them to another page one the same website. -->
         <nav>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="types">Types</a>
+                    <a href="types.html">Types</a>
                 </li>
                 <li>
                     <a href="protection.html">Protection</a>
@@ -33,36 +45,62 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <h1></h1>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="types.html">Types</a></li>
-                    <li><a href="protection.html">Protection</a></li>
-                    <li><a href="examples.html">Examples</a></li>
-                </ul>
-            </nav>
-        </header>
-        <article>
-            <img src="Images/Dog.png" alt="home_dog">
-            <h1>Social Engineering</h1>
-            <hr>
-            <h2>What is Social Engineering</h2>
-            <p></p>
-            <hr>
-            <h2>Who Does it?</h2>
-            <p></p>
-            <hr>
-            <h2>Impact</h2>
-            <p></p>
-        </article>
-            <footer>Developers: Gabriel Hernandez &#8226; Maria De Jesus Rizo &#8226; Jose Felix</footer>
+        <!-- Image displayed under the navigation on this particular page. -->
+        <img src="Images/Dog(2).png" alt="home_dog">
 
-        <script src="" async defer></script>
-    </body>
+    </header>
+    <!-- Begining of text content that is available on the page for users to read. -->
+    <!-- The article element contains the main text of this particular page.  -->
+    <article>
+        <!-- The br elements creates break between the image within the header above and the content within the aside element. -->
+        <br>
+        <!-- Image displayed to the right of the text writen below.-->
+        <img src="Images/thief.jpg" />
+        <!-- The h1 element makes the text wrapped by the tag larger compared to the other text on the page, indicating an important title or heading. -->
+        <h1>What is Social Engineering</h1>
+        <!-- The p tag creates a paragraph within the aside elements. The a tag located within this particular p tag links the word 'here' to types.html. This means that when the user clicks on the word they will be directed to the Types page. -->
+        <p>In its most simple definition, social engineering is the manipulation of a person by a another individual
+            with the intent of extracting sensitive or personal information from them. This can be done through a
+            multitude of ways including phishing, baiting, pretexting, etc. A more in depth look at these methods can
+            be
+            found <a href="types.html">here</a>. One of the defining aspects of social engineering is an attacks
+            reliance on human psycology rather than technical aspects. While yes, social engineering attacks sometimes
+            include some sort of malware or virus that infects the victims computer, they rely more heavily on tricking
+            the victim into divulging valuable information rather than just harvesting the information from the victims
+            computer. By doing so, social engineering attacks are more difficult to prevent as no software or antivirus
+            can truly protect against them. </p>
+        <!-- The hr element creates a horizontal rule under the p tag, seperating it from the rest fo the content on the page. -->
+        <hr>
+        <br>
+        <!-- Comments from above apply to the rest of the elemenets within the article element seen below.  -->
+        <img src="Images/hacker.jpg" alt="">
+        <h1>Who Does it?</h1>
+        <p>Social engineering is most often performed by hackers or identity theives attempting to gain access of
+            something from their victims, more specifically private or personal information such as a home address or
+            account login. Using this information hackers are able to gain access to the victims accounts, typically
+            bank or saving accounts, and take what they'd like from them like a persons entire life savings. Once the
+            hacker has this informaton it can be difficult to get back and fix any damage caused by them.
+        </p>
+        <hr>
+        <br>
+        <img src="Images/hack.jpg" alt="" />
+        <h1>Impact</h1>
+
+        <p>Since the beginning of the internet cyber attacks and hacking have always been a threat to individuals. For
+            this reason, people have always come up with new methods for creating safeguards from these attack. While
+            these protections against malicious attacks have become better and better as time goes one there is always
+            a weakness to them that hackers try to exploit. All protections and safeguards contain one common weakness,
+            that being the people that use them on a daily basis. These attacks can be devastating to individuals or
+            companies as they allow someone to take advantage of the information that they gain and use it as they
+            wish. This can result in thousands, even millions, of dollars in damages which could potentially ruin a
+            person depending on the extent of the damage. </p>
+
+    </article>
+    <!-- The footer element creates a section at the very bottom of the page in which text can be placed.-->
+    <footer>Developers: Gabriel Hernandez &#8226; Maria De Jesus Rizo &#8226; Jose Felix</footer>
+
+</body>
+<!-- End of content displayed on the page for users. -->
+
 </html>
+<!-- End of document. -->
